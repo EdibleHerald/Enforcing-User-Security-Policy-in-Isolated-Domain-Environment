@@ -12,8 +12,8 @@ Enacted security policy includes:
 - Enforced password complexity.
 - Lockout policy: 3 attempts given, 10 minute lockout if failed. 
 - Map shared folder to drive for each Organizational Unit:
-  > Information Technology security group: "it" shared folder mapped to I:\
-  > Human Resources security group: "hr" shared folder mapped to H:\
+  - Information Technology security group: "it" shared folder mapped to I:\
+  - Human Resources security group: "hr" shared folder mapped to H:\
 
 ## Demonstrations
 
@@ -29,23 +29,26 @@ AD Administrator lockout demonstration:
 ### Minimum Password Policy
 - 12 character minimum passwords enforced globally. 
 
-> Steve is told to create a new password as his old password (S1234@) is unsafe. 
-> In the demonstration he tries to change it to "MyNewPassword" but is rejected as it doesn't meet complexity requirements.
-> He finally settles on "MyNewPa$$word1" which meets requirements.
-Note: I do not endorse "MyNewPa$$word1" as a good password. In fact, according to "passwordmonster.com", this password can be cracked in 14 seconds. It is only used as an example of a password that meets policy. 
+- Steve is told to create a new password as his old password (S1234@) is unsafe. 
+- In the demonstration he tries to change it to "MyNewPassword" but is rejected as it doesn't meet complexity requirements.
+- He finally settles on "MyNewPa$$word1" which meets requirements.
+- Note: I do not endorse "MyNewPa$$word1" as a good password. In fact, according to "passwordmonster.com", this password can be cracked in 14 seconds. It is only used as an example of a password that meets policy. 
+
 Steve password complexity/length requirement demonstration:
 ![Gif showing user "Steve Steven" creating a password that meets complexity/length requirements](./Gifs/StevePasswordCreate.gif)
 
 ### Shared Network Folders Mapped to Drives
 - Map respective shared folders to a drive automatically for users.
 
-> Steve, being in the IT department, looks at his assigned shared folder.
-> Steve also attempts to access the HR shared folder, which he does not have access to. 
+- Steve, being in the IT department, looks at his assigned shared folder.
+- Steve also attempts to access the HR shared folder, which he does not have access to. 
+
 Steve accessing mapped drive demonstration:
 ![Gif demonstrating user "Steve Steven" accessing the "IT" shared folder under the mapped drive "I:\"](./Gifs/SteveAccessMappedDrive.gif)
 
-> Jamie, being in the HR department, looks at his assigned shared folder.
-> Jamie also attempts to access the IT shared folder, which he does not have access to.
+- Jamie, being in the HR department, looks at his assigned shared folder.
+- Jamie also attempts to access the IT shared folder, which he does not have access to.
+
 Jamie accessing mapped drive demonstration:
 ![Gif demonstrating user "Jamie Jamieson" accessing the "HR" shared folder under the mapped drive "H:\"](./Gifs/JamieAccessMappedDrive.gif)
 
