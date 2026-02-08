@@ -20,7 +20,8 @@ Enacted security policy includes:
 ### Account Lockout Policy
 - 3 Attempts before account gets locked, includes domain Administrator account. 
 
-> Steve forgets his password and gets locked out of his account.
+- Steve forgets his password and gets locked out of his account.
+
 Steve (Information Technology OU) lockout demonstration:
 ![Gif showing user "Steve Steven" getting locked out after using 3 invalid passwords](./Gifs/SteveLockOut.gif)
 
