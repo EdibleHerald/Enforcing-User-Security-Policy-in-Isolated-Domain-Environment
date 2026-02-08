@@ -1,6 +1,6 @@
 # Enforcing User Security Policy in Isolated Domain Environment
 
-[Diagram showing the domain setup. Includes one Active Directory domain. Within it are user policy that applies to the "Information Technology" Organizational Unit and "Human Resources" Organizational Unit. A File Server is also within the domain which allows shared folders to be accessed by each Organizational Unit respectively, preventing Users outside that OU from accessing that folder.](./Photos/TestADLAB.drawio.png)
+![Diagram showing the domain setup. Includes one Active Directory domain. Within it are user policy that applies to the "Information Technology" Organizational Unit and "Human Resources" Organizational Unit. A File Server is also within the domain which allows shared folders to be accessed by each Organizational Unit respectively, preventing Users outside that OU from accessing that folder.](./Photos/TestADLAB.drawio.png)
 
 ## Objective
 This lab focuses on Microsoft's Active Directory Domain Services, with the intent to configure User security policy to safeguard accounts and set strict boundaries between the following two Organizational Units:
@@ -22,7 +22,7 @@ Enacted security policy includes:
 
 > Steve forgets his password and gets locked out of his account.
 Steve (Information Technology OU) lockout demonstration:
-[Gif showing user "Steve Steven" getting locked out after using 3 invalid passwords](./Gifs/StevenLockOut.gif)
+![Gif showing user "Steve Steven" getting locked out after using 3 invalid passwords](./Gifs/SteveLockOut.gif)
 
 AD Administrator lockout demonstration:
 
@@ -34,7 +34,7 @@ AD Administrator lockout demonstration:
 > He finally settles on "MyNewPa$$word1" which meets requirements.
 Note: I do not endorse "MyNewPa$$word1" as a good password. In fact, according to "passwordmonster.com", this password can be cracked in 14 seconds. It is only used as an example of a password that meets policy. 
 Steve password complexity/length requirement demonstration:
-[Gif showing user "Steve Steven" creating a password that meets complexity/length requirements](./Gifs/StevePasswordCreate.gif)
+![Gif showing user "Steve Steven" creating a password that meets complexity/length requirements](./Gifs/StevePasswordCreate.gif)
 
 ### Shared Network Folders Mapped to Drives
 - Map respective shared folders to a drive automatically for users.
@@ -42,18 +42,18 @@ Steve password complexity/length requirement demonstration:
 > Steve, being in the IT department, looks at his assigned shared folder.
 > Steve also attempts to access the HR shared folder, which he does not have access to. 
 Steve accessing mapped drive demonstration:
-[Gif demonstrating user "Steve Steven" accessing the "IT" shared folder under the mapped drive "I:\"](./Gifs/SteveAccessMappedDrive.gif)
+![Gif demonstrating user "Steve Steven" accessing the "IT" shared folder under the mapped drive "I:\"](./Gifs/SteveAccessMappedDrive.gif)
 
 > Jamie, being in the HR department, looks at his assigned shared folder.
 > Jamie also attempts to access the IT shared folder, which he does not have access to.
 Jamie accessing mapped drive demonstration:
-[Gif demonstrating user "Jamie Jamieson" accessing the "HR" shared folder under the mapped drive "H:\"](./Gifs/JamieAccessMappedDrive.gif)
+![Gif demonstrating user "Jamie Jamieson" accessing the "HR" shared folder under the mapped drive "H:\"](./Gifs/JamieAccessMappedDrive.gif)
 
 ### Group Policy Management
 - Show off how Group Policy Objects are organized within the Group Policy Management tool.
 
 Group Policy Object organization demonstration:
-[Gif showing the Group Policy Objects within the Group Policy Management tool. Password and lockout policies are within the global "Default Domain Policy" object. Within the "UserOU" organizational unit sits two seperate domain policy: "Disable Control Panel", which disables control panel for all users who are not Administrators and "Map Network Drive" which maps the shared folders to their respected users. Maps the shared folder "hr" to "H:\" for HR user accounts and maps the shared folder "it" to "I:\" for IT user accounts.](./Gifs/GroupPolicyManagementDemo.gif)
+![Gif showing the Group Policy Objects within the Group Policy Management tool. Password and lockout policies are within the global "Default Domain Policy" object. Within the "UserOU" organizational unit sits two seperate domain policy: "Disable Control Panel", which disables control panel for all users who are not Administrators and "Map Network Drive" which maps the shared folders to their respected users. Maps the shared folder "hr" to "H:\" for HR user accounts and maps the shared folder "it" to "I:\" for IT user accounts.](./Gifs/GroupPolicyManagementDemo.gif)
 
 ## Summary
 This lab demonstrates the use of AD DS to enforce security policy on user objects such as password, lockout, control panel, and mapped drive policy. 
